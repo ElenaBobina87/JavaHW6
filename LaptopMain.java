@@ -53,6 +53,7 @@ public class LaptopMain {
                 Set<Integer> allRam = getAllRam(laptops);
                 System.out.println("Введите минимальный желаемый ОЗУ: " + allRam);
                 int ram = iScanner.nextInt();
+                iScanner.close();
                 filterCriterion.put("ОЗУ", ram);
                 for (Laptop laptop : laptops) {
                     if (laptop.getRam() >= ram) {
@@ -64,6 +65,7 @@ public class LaptopMain {
                 Set<Integer> allHardDriveCapasity = getAllHardDriveCapasity(laptops);
                 System.out.println("Введите минимальный желаемый объем жесткого диска: " + allHardDriveCapasity);
                 int hardDriveCapacity = iScanner.nextInt();
+                iScanner.close();
                 filterCriterion.put("объем ЖД", hardDriveCapacity);
                 for (Laptop laptop : laptops) {
                     if (laptop.getHardDriveCapasity() >= hardDriveCapacity) {
@@ -75,6 +77,7 @@ public class LaptopMain {
                 Set<String> allOS = getAllOS(laptops);
                 System.out.println("Введите желаемую операционную систему: " + allOS);
                 String oS = iScanner.nextLine();
+                iScanner.close();
                 filterCriterion.put("OC", oS);
                 for (Laptop laptop : laptops) {
                     if (laptop.getOS().equals(oS)) {
@@ -86,6 +89,7 @@ public class LaptopMain {
                 Set<String> allColor = getAllColor(laptops);
                 System.out.println("Введите желаемый цвет: " + allColor);
                 String color = iScanner.nextLine();
+                iScanner.close();
                 filterCriterion.put("Цвет", color);
                 for (Laptop laptop : laptops) {
                     if (laptop.getColor().equals(color)) {
@@ -95,7 +99,9 @@ public class LaptopMain {
                 return filteredLaptops;
             
         }
+        iScanner.close();
         return filteredLaptops;
+        
         
 
         

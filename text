@@ -30,3 +30,7 @@ ID (id)
 Методы:
 Гетеры: getID, getRam, getHardDriveCapasity, getOS, getColor
 Сетеры: setID, setRam, setHardDriveCapasity, setOS, setColor
+
+Хотите выбрать еще один параметр?
+Нажмите 1, если хотите закончить.
+Нажмите 2, если хотите выбрать другой параметр.
