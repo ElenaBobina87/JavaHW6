@@ -65,7 +65,7 @@ public class Laptop {
     public String toString() {
 
         
-        return ("ID: " + id + ", ОЗУ: " + ram + ", Объем ЖД: " + hardDriveCapasity + ", Операционная система: " + oS + ", Цвет: " + color);
+        return ("ID: " + id + ", ОЗУ(Гб): " + ram + ", Объем ЖД(Гб): " + hardDriveCapasity + ", Операционная система: " + oS + ", Цвет: " + color);
     }
 
     @Override

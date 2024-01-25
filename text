@@ -19,12 +19,14 @@
 условиям.
 
 Ноутбук
+
 Поля:
 ID (id)
 ОЗУ (ram)
 Объем ЖД (hardDriveCapasity)
 Операционная система (oS)
 Цвет (color)
+
 Методы:
 Гетеры: getID, getRam, getHardDriveCapasity, getOS, getColor
 Сетеры: setID, setRam, setHardDriveCapasity, setOS, setColor
