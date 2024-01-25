@@ -2,6 +2,7 @@ package HW6;
 
 import java.util.Objects;
 
+
 /**
  * Laptop
  */
@@ -86,6 +87,7 @@ public class Laptop {
     public int hashCode() {
         return Objects.hash(id, ram, color, hardDriveCapasity, oS);
     }
+    
     
 }
 
